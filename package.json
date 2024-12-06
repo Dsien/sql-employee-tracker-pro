@@ -13,21 +13,16 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "inquirer": "^8.2.6",
-    "pg": "^8.13.0"
+    "pg": "^8.13.0",
+    "typescript": "^5.7.2"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/dontev": "^8.2.0",
+    "@types/dotenv": "^8.2.0",
     "@types/express": "^5.0.0",
     "@types/inquirer": "^9.0.7",
     "@types/pg": "^8.11.10"
   }
 }
-
-
-
-
-
-
