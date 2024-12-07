@@ -1,16 +1,6 @@
-
-DROP DATABASE IF EXISTS employee_db;
-
-
-CREATE DATABASE employee_db;
-
--- Connect to the new database
-\c employee_db;
-
-
-DROP TABLE IF EXISTS employee;
-DROP TABLE IF EXISTS role;
-DROP TABLE IF EXISTS department;
+drop table if exists employee;
+drop table if exists role;
+drop table if exists department;
 
 
 CREATE TABLE IF NOT EXISTS department (

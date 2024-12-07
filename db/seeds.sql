@@ -1,6 +1,5 @@
 -- Insert departments
-INSERT INTO departments (name) VALUES
-\c SQL_Tracker_db
+INSERT INTO department (name) VALUES
 
 ('HR'),
 ('Engineering'),
@@ -8,8 +7,10 @@ INSERT INTO departments (name) VALUES
 ('Legal'),
 ('Marketing'),
 ('Finance'),
-('IT'),
-ON CONFLICT (name) DO NOTHING;
+('IT');
+
+
+
 
 -- Insert roles
 INSERT INTO roles (title, salary, department_id) VALUES
@@ -19,8 +20,8 @@ INSERT INTO roles (title, salary, department_id) VALUES
 ('Lawyer', 80000, 4),
 ('Marketing Manager', 80000, 5),
 ('Accountant', 70000, 6),
-('IT Manager', 85000, 7)
-ON CONFLICT (title) DO NOTHING;
+('IT Manager', 85000, 7);
+
 
 -- Insert employees
 INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES
@@ -30,14 +31,4 @@ INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES
 ('Felicity', 'Smoak', 4, 1),
 ('Barry', 'Allen', 5, 1),
 ('Courtney', 'Witmore', 6, 1),
-('Jill', 'Monroe', 7, 1)
-ON CONFLICT (first_name, last_name) DO NOTHING;
-
-
-
-
-
-
-
-
-
+('Jill', 'Monroe', 7, 1);
